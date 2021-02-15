@@ -1,0 +1,9 @@
+apiDir: "../headless-commerce-aws-personalize-api/src/main/java"
+apiPackagePath: "headless.commerce.aws.personalize"
+application:
+    baseURI: "/headless-commerce-aws-personalize"
+    className: "HeadlessCommerceAwsPersonalizeApplication"
+    name: "HeadlessCommerceAwsPersonalize"
+author: "riccardoferrari"
+clientDir: "../headless-commerce-aws-personalize-client/src/main/java"
+testDir: "../headless-commerce-aws-personalize-test/src/testIntegration/java"

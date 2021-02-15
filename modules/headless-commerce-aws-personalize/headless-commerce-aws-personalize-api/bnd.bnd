@@ -1,0 +1,6 @@
+Bundle-Name: headless-commerce-aws-personalize-api
+Bundle-SymbolicName: headless.commerce.aws.personalize.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	headless.commerce.aws.personalize.dto.v1_0,\
+	headless.commerce.aws.personalize.resource.v1_0

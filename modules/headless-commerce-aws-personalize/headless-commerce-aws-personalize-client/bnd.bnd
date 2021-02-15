@@ -1,0 +1,3 @@
+Bundle-Name: headless-commerce-aws-personalize-client
+Bundle-SymbolicName: headless.commerce.aws.personalize.client
+Bundle-Version: 1.0.0
