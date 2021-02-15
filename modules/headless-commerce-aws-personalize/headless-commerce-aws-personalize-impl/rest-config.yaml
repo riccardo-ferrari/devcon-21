@@ -1,5 +1,5 @@
 apiDir: "../headless-commerce-aws-personalize-api/src/main/java"
-apiPackagePath: "headless.commerce.aws.personalize"
+apiPackagePath: "com.liferay.headless.commerce.aws.personalize"
 application:
     baseURI: "/headless-commerce-aws-personalize"
     className: "HeadlessCommerceAwsPersonalizeApplication"

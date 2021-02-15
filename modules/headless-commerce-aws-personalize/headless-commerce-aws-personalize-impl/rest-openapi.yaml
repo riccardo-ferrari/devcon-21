@@ -1,8 +1,55 @@
+components:
+    schemas:
+        Interactions:
+            properties:
+                ITEM_ID:
+                    description:
+                        Product Definition ID
+                    type: string
+                TIMESTAMP:
+                    description:
+                        Event timestamp
+                    format: int64
+                    type: integer
+                USER_ID:
+                    description:
+                        User ID (or Account ID)
+                    type: string
+        Items:
+            properties:
+                CATEGORY:
+                    description:
+                        Product Category
+                    type: string
+                CREATION_TIMESTAMP:
+                    description:
+                        Product crateion timestamp
+                    format: int64
+                    type: integer
+                ITEM_ID:
+                    description:
+                        Product SKU
+                    type: string
+        Users:
+            properties:
+                COUNTRY:
+                    description:
+                        Account Country
+                    type: string
+                USER_ID:
+                    description:
+                        User ID (or Account ID)
+                    type: string
 info:
-    description: "HeadlessCommerceAwsPersonalize REST API"
+    description:
+        "HeadlessCommerceAwsPersonalize REST API. A Java client JAR is available for use with the group ID
+        'com.liferay', artifact ID 'com.liferay.headless.commerce.aws.personalize.client', and version '1.0.0'."
     license:
-        name: "Apache 2.0"
-        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-    title: "HeadlessCommerceAwsPersonalize"
+        name: Apache 2.0
+        url: http://www.apache.org/licenses/LICENSE-2.0.html
+    title: HeadlessCommerceAwsPersonalize
     version: v1.0
 openapi: 3.0.1
+paths: {}
+servers:
+    - url: /
