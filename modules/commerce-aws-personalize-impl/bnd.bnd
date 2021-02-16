@@ -1,0 +1,8 @@
+Bundle-Name: commerce-aws-personalize-impl
+Bundle-SymbolicName: commerce.aws.personalize.impl
+Bundle-Version: 1.0.0
+Import-Package: !org.apache.avalon.framework.*,\
+!org.apache.log.*,\
+!org.joda.convert,\
+*
+-dsannotations-options: inherit

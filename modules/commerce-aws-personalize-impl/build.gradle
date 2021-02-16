@@ -1,0 +1,28 @@
+buildscript {
+	dependencies {
+		classpath group: "io.spring.gradle", name: "dependency-management-plugin", version: "1.0.11.RELEASE"
+	}
+	repositories {
+		maven {
+			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+		}
+	}
+}
+
+apply plugin: "io.spring.dependency-management"
+
+dependencies {
+	compileInclude group: "com.amazonaws", name: "aws-java-sdk-personalizeruntime"
+	compileInclude group: "com.amazonaws", name: "aws-java-sdk-s3"
+	compileInclude group: "joda-time", name: "joda-time", version: "2.8.1"
+
+	compileOnly group: "com.liferay", name: "com.liferay.dispatch.api", version: "1.0.1"
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+	compileOnly project(":modules:headless-commerce-aws-personalize:headless-commerce-aws-personalize-api")
+}
+
+dependencyManagement {
+	imports {
+		mavenBom 'com.amazonaws:aws-java-sdk-bom:1.11.954'
+	}
+}
